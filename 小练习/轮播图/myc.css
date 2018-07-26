@@ -1,0 +1,142 @@
+body{
+ position: relative;
+ width: 100%;
+ margin: 0;
+ background-color: gray;
+ text-align: center;
+ overflow: hidden;
+ cursor: Default;
+ -webkit-user-select: none;
+}
+
+#title{
+ position: relative;
+ margin: 0 130px;
+ padding: 15px 0;
+ top :10px;
+ font-size: 26px;
+ color: #eee;
+ text-shadow: 1px 1px 6px #ccc;
+ border-bottom: 1px solid #aaa;
+}
+
+#main-div-father{
+ position: absolute;
+ top: 240px;
+ left: 50%;
+}
+
+#main-div{
+ position: relative;
+ left: -275px;
+ width: 550px;
+ height: 550px;
+ border: 1px solid #777;
+ background-color: white;
+ overflow: hidden;
+}
+
+.pic{
+ position: relative;
+ index-z: 1;
+}
+.p1{
+ position: relative;
+ top:80px;
+}
+.p2,.p3,.p4{
+ display: none;
+}
+
+.shadow{
+ position: absolute;
+ top: 0;
+ width: 100px;
+ height: 550px;
+ color: transparent;
+ index-z= 2;
+ -webkit-transition: box-shadow .2s, color .2s, text-shadow .2s;
+}
+
+.left{
+ left:0px;
+ box-shadow: 60px 0 60px -30px #777 inset;
+}
+.right{
+ right:0px;
+ box-shadow: -60px 0 60px -30px #777 inset;
+}
+
+.left:link{} .left:visited{} 
+.left:hover{
+ box-shadow: 60px 0 60px -30px #666 inset;
+ cursor: pointer;
+ color: #ccc;
+ text-shadow: 0 0 2px #ddd;
+}
+right:link{} .right:visited{}
+.right:hover{
+ box-shadow: -60px 0 60px -30px #666 inset;
+ cursor: pointer;
+ color: #ccc;
+ text-shadow: 0 0 2px #aaa;
+}
+
+.left:active{
+ color: #fff;
+ text-shadow: 0 0 10px #fff;
+ -webkit-transition:color .1s, text-shadow .1s;
+}
+.right:active{
+ color: #fff;
+ text-shadow: 0 0 10px #fff;
+ -webkit-transition:color .1s, text-shadow .1s;
+}
+
+#main-div > img{
+ height: 100%;
+}
+
+.page{
+ position: absolute;
+ borderg: 0;
+ height: 550px;
+ line-height: 550px;
+ font-size: 40px;
+}
+
+.pl{
+ left: 8px;
+}
+.pr{
+ right: 8px;
+}
+
+.dotplat{
+ position: absolute;
+ bottom: 0;
+ left: 175px;
+ width: 200px;
+ height: 50px;
+ text-align: center;
+ index-z: 3;
+}
+.dot{
+ position: relative;
+ margin: 12px;
+ padding: 2px;
+ top: 0px;
+ width: 7px;
+ height: 7px;
+ border: 1px solid #777;
+ border-radius: 6px;
+ box-shadow: 0 0 2px #999;
+ display: inline-block;
+ background-color: rgba(222,222,222,.5);
+}
+
+
+.d0:link{} .d0:visited{}.d0:hover{cursor: pointer;}
+.d1:link{} .d1:visited{}.d1:hover{cursor: pointer;}
+.d2:link{} .d2:visited{}.d2:hover{cursor: pointer;}
+.d3:link{} .d3:visited{}.d3:hover{cursor: pointer;}
